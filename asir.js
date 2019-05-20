@@ -1,12 +1,12 @@
-let alumnoAsir {
+let alumnoAsir = {
 
-notaPAR: PAR,
-notaFH : FH,
-notaLM : LM,
-notaISO : ISO,
-notaBD : BD,
-notaFOL : FOL,
-notaDescanso : Descanso
+notaPAR: 1,
+notaFH : 2,
+notaLM : 3,
+notaISO : 4,
+notaBD :5,
+notaFOL : 6,
+notaDescanso : 7
 
 };
 
@@ -15,7 +15,7 @@ for (let nota in alumnoAsir) {
 
 };
 
-for (alumnoAsir) {
-alert (alumnoAsir.nota);
+for (nota in alumnoAsir) {
 
-}
+  alert (nota+":"+alumnoAsir[nota])
+};
