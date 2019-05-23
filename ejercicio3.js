@@ -3,7 +3,7 @@ let salir=false;
 let primero;
 let ultimo;
 while (salir!=true) {
-  let operaciones = +prompt ("Que operacion quieres realizar \n 1- mostrar los elementos \n 2- extraer el primer elemento \n 3- extraer el ultimo elemento \n 4- introducir nuevo elemento al principio \n 5-introducir un elemento al final \n 6-muestra el numero de elementos \n 7- mostrar posicion en el array \n  8- modificar el valor \n  9-Salir ","1- mostrar, 2 - ");
+  let operaciones = +prompt ("Que operacion quieres realizar \n 1- mostrar los elementos \n 2- extraer el primer elemento \n 3- extraer el ultimo elemento \n 4- introducir nuevo elemento al principio \n 5-introducir un elemento al final \n 6-muestra el numero de elementos \n 7- mostrar posicion en el array \n  8- modificar el valor \n  9-Salir ","Seleccion ");
 
 switch (operaciones) {
   case 1:
