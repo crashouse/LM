@@ -1,11 +1,13 @@
+
 let lista2 = [];
 let salir=false;
 let padre;
 let padre2;
+let variable2;
 let mostrar='';
 let eliminarnodo=document.getElementById("lista");
 while (salir!=true) {
-  let operaciones = +prompt ("Que operacion quieres realizar \n 1- Crear Nodo en LI al principio \n 2- Crear Nodo en LI al final \n 3- Remover el primer elemento \n 4- Remover ultimo elemento \n 5- Remover elemento concreto \n 6-muestra elemento en posicion \n 7- Mostrar contenido todos los elementos \n  8- modificar el valor \n  9-Salir ","Seleccion ");
+  let operaciones = +prompt ("Que operacion quieres realizar \n 1- Crear Nodo en LI al principio \n 2- Crear Nodo en LI al final \n 3- Remover el primer elemento \n 4- Remover ultimo elemento \n 5- Remover elemento concreto \n 6-muestra elemento en posicion \n 7- Mostrar contenido todos los elementos \n  8- modificar el valor \n 10 - Colorear un elemento concreto \n  11-Salir ","Seleccion ");
 
 switch (operaciones) {
   case 1:
@@ -37,10 +39,8 @@ alert(padre.innerHTML);
      case 4:
  // eliminar el ultimo nodo
      let ultimo=eliminarnodo.lastElementChild;
-     alert(eliminarnodo.innerHTML);
-        ultimo.remove();
-        alert(eliminarnodo.innerHTML);
-        alert("Entra en case3");
+     ultimo.remove();
+  
         break;
 
         case 5:
@@ -54,14 +54,18 @@ break;
 
 case 6:
 
+// mostrar contenido elemento en posicion
+
 let posicion2= prompt("selecciona posición");
 
 alert(lista.children[posicion2].innerHTML);
 break;
-//mostrar elementos
+
 
 
 case 7:
+
+// seleccionar li dentro de ol  y mostrar el contenido
 
 let elementos = document.querySelectorAll('ol > li');
 let posicion3=1;
@@ -78,17 +82,36 @@ break;
 
 
 
-case 8:
+ case 8:
 
-posicion4= prompt("Introduce la posicion");
-lista4= prompt("Introduce el nuevo valor");
+let listadoelemento= document.getElementById('lista');
 
-let 
 
+ let posicionnodo= +prompt("Introduce la posicion");
+let valor= prompt("Introduce el nuevo valor");
+listadoelemento.children[posicionnodo-1].textContent = valor;
+break;
+
+
+case 9 :
+
+let cantidad = document.getElementById('lista');
+
+
+alert (cantidad.length);
+break;
+
+
+case 10:
+
+let preguntaelemento=prompt("introduce el numero de elemento");
+let colorfondo = document.getElementById('lista').getElementsByTagName("li")[preguntaelemento-1];
+colorfondo.style.background = '#FF00AA';
 
 break;
 
-case 9:
+
+case 11:
 alert ("Adios");
 salir=true;
 break;
