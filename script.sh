@@ -1,4 +1,5 @@
 #!/bin/bash
+#cambio
 # Script desarrollado en 2º de ASIR por borrachos conocidos sin puertos abiertos
 clear
 # modificación 1 para evitar que se introduzca un valor vacio
