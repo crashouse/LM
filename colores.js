@@ -34,7 +34,7 @@ contador++;
 conocimientos.style.background='orange';
 
 let tablas = document.getElementsByTagName('table');
-for (tablita in tablas) {
+for (tablita of tablas) {
 tablita.row[0].cells[0].style.background='pink';
 
 };
